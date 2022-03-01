@@ -34,7 +34,7 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
       username: from,
       id: client.id,
     }
-    console.log(clientData)
+ 
 
     return this.server.emit('connection', clientData)
   }
